@@ -1,0 +1,67 @@
+The following are the data models or the fields an admin should have in the database.
+1. Id: it should be unique
+2. username: it should be a string
+3. password: it should be hashed for security reasons
+4. name: string
+5. Email: string
+6. phone no: string
+7. admin level or office
+
+The following are the problems the admin would solve
+1. Enrollment and Removal of student
+2. course management
+3. curriculum management
+4. Timetable management
+5. hiring and removal of staff
+6. collection of anonymous report
+
+The following entities or api are going to be generated in the database for the admin to interact with
+1. Student entity
+2. course entity
+3. curriculum entity
+4. staff entity
+5. report entity
+6. calender api maybe google calender
+7. Department or class entity.
+
+Report entity:
+ The report entity will be a table or collection of anonymous report from students or staff.
+ The report entity will have the following model in the database.
+1. report id
+2. report summary
+3. report date
+4. tag: to tag who the complaint is about
+5. report description
+
+Course entity:
+ Courses could have the following structure in the database.
+1. Name: string
+2  Id: String
+3  Teachers: Name(s) of teachers teaching the course
+4. Course master: the name of the teacher responsible for collating the grade for that particular course
+5. creation date: the date the course was added
+6. Recommended Books: Recommended books for that particular course
+7. Course title: an acronym for the course
+8. Course entity should share a relationship with the Curriculum entity.
+9. Grade weight
+
+Curriculum entity:
+This represents the scheme of work or topics covered in each course. It should have the following model in the database.
+1. Name
+2. last update date
+3. topics covered with calender reference.
+
+The admin can also interact with the department entity which represents the class or department of each student.
+Below are the basic model or structure of the department
+
+1. Name
+2. title
+3. relationship with student entity
+4. relationship with course entity
+5. Head of department or class
+
+
+Based on the above information I recommend my colleagues add the following data models to their stakeholder
+
+1. Staff should have an employment status in its database field
+2. staff should have hired date and sacked date
