@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import csv
 import pymysql
 
@@ -10,10 +11,10 @@ db_config = {
 }
 
 # CSV file path
-csv_file = '../datadeploy/pagination.csv'
+csv_file = '../datadeploy/Course_entity.csv'
 
 # Table name in the database
-table_name = 'Laptop_data'
+table_name = 'course_entity'
 
 # Connect to the database
 try:
