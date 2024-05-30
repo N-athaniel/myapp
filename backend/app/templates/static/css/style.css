@@ -1,0 +1,15 @@
+/* flask_app/app/static/css/style.css */
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hello-world {
+    color: yellow;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
